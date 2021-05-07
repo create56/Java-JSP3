@@ -45,7 +45,7 @@ public class SessionLogin extends HttpServlet {
 			HttpSession session = request.getSession();
 			
 			session.setAttribute("isLogin", true);
-			session.setAttribute("nickname", nickname);
+			session.setAttribute("nickname", NickName);
 		} else {
 			response.setStatus(400);
 		}
